@@ -9,7 +9,7 @@ public class Calculator {
         System.out.print("Enter your first number : ");
         double firstNumber = scan.nextDouble();
 
-        System.out.print("Enter your secon number : ");
+        System.out.print("Enter your second number : ");
         double secondNumber = scan.nextDouble();
         scan.nextLine();
 

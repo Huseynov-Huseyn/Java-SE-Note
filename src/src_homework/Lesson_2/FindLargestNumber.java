@@ -25,7 +25,6 @@ public class FindLargestNumber {
         scan.close();
         System.out.println((randomNumber == largestNumber) ? "Congratulations, you win !" : ("Random number:" + randomNumber + " not equals with: " + largestNumber));
 
-
         /*
             I can use while till i get valid number:  
             while (largestNumber < 0 || largestNumber > 10) {
@@ -34,6 +33,4 @@ public class FindLargestNumber {
          */
 
     }
-
-
 }

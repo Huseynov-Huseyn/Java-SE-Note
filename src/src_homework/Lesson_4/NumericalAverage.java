@@ -10,6 +10,7 @@ public class NumericalAverage {
         double average = 0;
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = ran.nextInt(100);
+            System.out.println((i + 1) + ". Number : " + numbers[i]);
             average += numbers[i];
         }
         average /= numbers.length;

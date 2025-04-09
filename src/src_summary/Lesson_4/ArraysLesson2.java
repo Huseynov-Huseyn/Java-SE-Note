@@ -5,9 +5,9 @@ public class ArraysLesson2 {
         int[] intArray;
         int[] intArrays = new int[5];
 
-//        String[] stringArray = {"Apple", "Banana", "cherry"};
+//        String[] stringArray = {"Apple", "Banana", "Cherry"};
         String[] stringArray;
-        stringArray = new String[]{"Apple", "Banana", "cherry"};
+        stringArray = new String[]{"Apple", "Banana", "Cherry"};
 
 
     }

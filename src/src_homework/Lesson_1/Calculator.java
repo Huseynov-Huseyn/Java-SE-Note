@@ -10,7 +10,7 @@ public class Calculator {
         int number1 = scan.nextInt();
         System.out.print("Please enter your number2:");
         int number2 = scan.nextInt();
-        // scan.nextInt().var .var tipini ozu yazir
+        // scan.nextInt().var .var auto create type
         scan.close();
 
         System.out.println("number1 + number2 = " + (number1 + number2));

@@ -27,5 +27,5 @@ public class ArrayMethods {
 
         int[] numbersPlagiat = Arrays.copyOf(numbers, numbers.length);
         System.out.println(numbersPlagiat);
-        }
+    }
 }

@@ -6,6 +6,7 @@ public class AreaPerimeter {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Please enter first side of rectangle : ");
+
         double firstSide = scan.nextDouble();
         System.out.print("Please enter second side of rectangle : ");
         double secondSide = scan.nextDouble();
