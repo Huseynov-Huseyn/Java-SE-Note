@@ -13,5 +13,8 @@ public class Car {
                 ", model='" + model + '\'' +
                 ", year='" + year + '\'' +
                 '}';
+        //Override toString() = Car{brand='BMW', model='I5', year='2022'}
     }
+
+    //Object class's toString() = src_summary.Lesson_6.Objects.Car@5f184fc6
 }

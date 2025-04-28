@@ -24,7 +24,7 @@ public class EvenOdd {
         double decNumber = scan.nextDouble();
         scan.close();
 
-        System.out.println("Sum of the entered decimal number and the integer : " + (double) (decNumber + intNumber));
+        System.out.println("Sum of the entered decimal number and the integer : " + (decNumber + intNumber));
         intNumber += (int) (Math.random() * 10) + 1;
         System.out.println(intNumber);
 

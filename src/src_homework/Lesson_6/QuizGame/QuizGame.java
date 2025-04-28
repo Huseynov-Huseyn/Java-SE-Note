@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class QuizGame {
 
+    static Scanner scan = new Scanner(System.in);
     private static Question[] questions;
     private static int point;
-    static Scanner scan = new Scanner(System.in);
 
     private QuizGame() {
         questions = new Question[5];
