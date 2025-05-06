@@ -20,8 +20,8 @@ public class LoopsFor {
         }
 
         char letter = 'F';
-        for (int i = 0; i < 5; i++) {
-            System.out.println(letter -= 1);
+        for (int i = 8711; i < 8721; i++) {
+            System.out.println(letter += i);
         }
 
     }
