@@ -22,7 +22,6 @@ public class Library {
             books[i] = book;
         } else {
             System.out.println("Library is full!");
-
         }
     }
 

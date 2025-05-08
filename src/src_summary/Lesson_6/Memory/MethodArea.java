@@ -7,6 +7,7 @@ public class MethodArea {
 
         //Method argument:2,5 | return address : sum
         int sum = sum(2, 5);
+
         // Calling the Display method
         g.Display();
     }
