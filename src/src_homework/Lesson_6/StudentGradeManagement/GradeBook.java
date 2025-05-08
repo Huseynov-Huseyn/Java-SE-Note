@@ -1,4 +1,4 @@
-package src_homework.Lesson_6.StudentGradeManagementSystem;
+package src_homework.Lesson_6.StudentGradeManagement;
 
 import java.util.Arrays;
 import java.util.UUID;

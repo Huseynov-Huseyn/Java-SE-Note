@@ -1,4 +1,4 @@
-package src_homework.Lesson_6.LibraryManagementSystem;
+package src_homework.Lesson_6.LibraryManagement;
 
 public class Main {
 
