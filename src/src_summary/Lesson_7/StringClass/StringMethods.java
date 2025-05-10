@@ -60,5 +60,10 @@ public class StringMethods {
         // Checks if the string starts with the given prefix
         System.out.println(name.startsWith("H"));
 
+        String s = "Huseyn Huseynov";
+        String[] splits = s.split("\\s+");
+        for (String split : splits) {
+            System.out.println(split);
+        }
     }
 }
