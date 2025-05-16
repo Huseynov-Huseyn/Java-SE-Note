@@ -2,18 +2,20 @@ package src_homework.Lesson_6.QuizGame;
 
 public class Question {
 
-    String questionText;
-    String variantA;
-    String variantB;
-    String variantC;
-    String correctVariant;
+    private final String questionText;
+    private final String variantA;
+    private final String variantB;
+    private final String variantC;
+    private final String correctVariant;
+    private final int questionPoint;
 
-    public Question(String questionText, String variantA, String variantB, String variantC, String correctVariant) {
+    public Question(String questionText, String variantA, String variantB, String variantC, String correctVariant, int questionPoint) {
         this.questionText = questionText;
         this.variantA = variantA;
         this.variantB = variantB;
         this.variantC = variantC;
         this.correctVariant = correctVariant;
+        this.questionPoint = questionPoint;
     }
 
     public String getQuestionText() {
@@ -36,6 +38,10 @@ public class Question {
         return variantC;
     }
 
+    public int getQuestionPoint() {
+        return questionPoint;
+    }
+
     @Override
     public String toString() {
         return "Question{" +
@@ -44,7 +50,7 @@ public class Question {
                 ", variantA='" + variantA + '\'' +
                 ", variantB='" + variantB + '\'' +
                 ", variantC='" + variantC + '\'' +
+                ", questionPoint=" + questionPoint +
                 '}';
     }
-
 }

@@ -8,18 +8,13 @@ public class QuizGame {
     private static Question[] questions;
     private static int point;
 
-    private QuizGame() {
-        questions = new Question[5];
-        questions[0] = new Question("What is the chemical symbol for water?", "H2O", "CO2", "O2", "A");
-        questions[1] = new Question("How many planets are in our solar system?", "7", "8", "9", "B");
-        questions[2] = new Question("What is the capital of France?", "Berlin", "Madrid", "Paris", "C");
-        questions[3] = new Question("Who painted the Mona Lisa?", "Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "C");
-        questions[4] = new Question("What is the largest planet in our solar system?", "Jupiter", "Earth", "Mars", "A");
-    }
-
-
     public static void main(String[] args) {
-        new QuizGame();
+        questions = new Question[5];
+        questions[0] = new Question("What is the chemical symbol for water?", "H2O", "CO2", "O2", "A", 10);
+        questions[1] = new Question("How many planets are in our solar system?", "7", "8", "9", "B", 20);
+        questions[2] = new Question("What is the capital of France?", "Berlin", "Madrid", "Paris", "C", 30);
+        questions[3] = new Question("Who painted the Mona Lisa?", "Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "C", 20);
+        questions[4] = new Question("What is the largest planet in our solar system?", "Jupiter", "Earth", "Mars", "A", 20);
 
         startQuiz();
         scan.close();
@@ -45,13 +40,13 @@ public class QuizGame {
         System.out.print("Your Choice : ");
 
         String choice = scan.nextLine().toUpperCase();
-        evaluateAnswer(choice, ob.getCorrectVariant());
+        evaluateAnswer(choice, ob.getCorrectVariant(), ob.getQuestionPoint());
     }
 
-    static void evaluateAnswer(String choice, String correctVariant) {
+    static void evaluateAnswer(String choice, String correctVariant, int questionPoint) {
         if (choice.equals(correctVariant)) {
-            point += 20;
-            System.out.println("Your answer is correct, you get 20 point ");
+            point += questionPoint;
+            System.out.println("Your answer is correct, you get " + questionPoint + " point ");
         } else {
             System.out.println("Unfortunately your choice is not correct !");
         }
