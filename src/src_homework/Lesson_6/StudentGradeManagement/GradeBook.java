@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.UUID;
 
 public class GradeBook {
-    Student[] students = new Student[2];
+    private final Student[] students = new Student[2];
 
     public boolean addStudent(Student student) {
         for (int i = 0; i < students.length; i++) {

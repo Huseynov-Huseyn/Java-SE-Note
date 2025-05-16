@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public class Student {
     static Scanner scan = new Scanner(System.in);
-    UUID studentId;
+    private final UUID studentId;
     String name;
     double[] grades;
 
@@ -23,9 +23,12 @@ public class Student {
         if (s.getName().isEmpty()) {
             s.setName(scan.nextLine());
         }
+        int gradeNumber;
 
-        System.out.print("How much grade do you want to add : ");
-        int gradeNumber = scan.nextInt();
+        do {
+            System.out.print("How much grade do you want to add : ");
+            gradeNumber = scan.nextInt();
+        } while (gradeNumber <= 0);
 
         double[] grades = new double[gradeNumber];
         for (int i = 0; i < gradeNumber; i++) {
