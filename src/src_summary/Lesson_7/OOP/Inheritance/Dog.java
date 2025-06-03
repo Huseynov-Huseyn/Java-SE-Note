@@ -8,22 +8,9 @@ public class Dog extends Animal {
         this.isWild = isWild;
     }
 
-    public Dog(Animal a, boolean isWild) {
-        super(a);
-        this.isWild = isWild;
-    }
-
-    public boolean isWild() {
-        return isWild;
-    }
-
-    public void setWild(boolean wild) {
-        isWild = wild;
-    }
-
     public void sayName() {
         super.sayName();
-        if (this.isWild) {
+        if (isWild) {
             System.out.println("And i am wild");
         } else {
             System.out.println("And i am not wild");
@@ -31,10 +18,10 @@ public class Dog extends Animal {
     }
 
     @Override
-    public String toString() {
+    public String showInfo() {
         return "Dog{" +
-                "name='" + super.getName() + '\'' +
-                ", weight=" + super.getWeight() +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
                 ", isWild=" + isWild +
                 '}';
     }
