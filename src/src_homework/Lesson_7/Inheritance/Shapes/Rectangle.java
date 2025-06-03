@@ -11,6 +11,7 @@ public class Rectangle extends Shape {
 
     @Override
     public double calculateArea() {
+        System.out.println("Sup class calculate Area : " + super.calculateArea());
         return length * width;
     }
 }
