@@ -5,11 +5,6 @@ public class Pet {
     protected int age;
     protected double weight;
 
-    public Pet(int age, String name, double weight) {
-        this.name = name;
-        this.age = age;
-        this.weight = weight;
-    }
 
     void eat() {
         System.out.println(this.getClass().getSimpleName() + " is eating");
@@ -27,27 +22,9 @@ public class Pet {
         System.out.print(this.getClass().getSimpleName() + " -> name: " + name + ", age: " + age + ", weight: " + weight);
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Pet(int age, String name, double weight) {
         this.name = name;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(double weight) {
+        this.age = age;
         this.weight = weight;
     }
 }

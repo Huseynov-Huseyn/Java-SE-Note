@@ -1,7 +1,7 @@
 package src_homework.Lesson_7.Inheritance.Pets;
 
 public class Dog extends Pet {
-    private String breed;
+    private final String breed;
 
     public Dog(int age, String name, double weight, String breed) {
         super(age, name, weight);
@@ -18,11 +18,4 @@ public class Dog extends Pet {
         System.out.println(", breed : " + breed);
     }
 
-    public String isBreed() {
-        return breed;
-    }
-
-    public void setBreed(String breed) {
-        this.breed = breed;
-    }
 }

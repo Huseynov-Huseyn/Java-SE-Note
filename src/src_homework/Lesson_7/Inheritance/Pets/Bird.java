@@ -1,7 +1,7 @@
 package src_homework.Lesson_7.Inheritance.Pets;
 
 public class Bird extends Pet {
-    private double wingSpan;
+    private final double wingSpan;
 
     public Bird(int age, String name, double weight, double wingSpan) {
         super(age, name, weight);
@@ -22,11 +22,4 @@ public class Bird extends Pet {
         System.out.println(", wing span : " + wingSpan);
     }
 
-    public double getWingSpan() {
-        return wingSpan;
-    }
-
-    public void setWingSpan(double wingSpan) {
-        this.wingSpan = wingSpan;
-    }
 }

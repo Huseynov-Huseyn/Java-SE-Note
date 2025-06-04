@@ -8,7 +8,7 @@ public class Main {
         Rectangle r = new Rectangle(10, 30);
         System.out.println(r.calculateArea() + " sm");
         MathUtils math = new MathUtils();
-        math.twoSum(5,10);
+        math.twoSum(5, 10);
 
     }
 }
