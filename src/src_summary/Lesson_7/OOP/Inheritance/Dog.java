@@ -19,6 +19,8 @@ public class Dog extends Animal {
 
     @Override
     public String showInfo() {
+        super.sayName();
+//        You can also call method of your supclass with super keyword
         return "Dog{" +
                 "name='" + name + '\'' +
                 ", weight=" + weight +
