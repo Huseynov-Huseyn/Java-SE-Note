@@ -1,4 +1,4 @@
-package src_summary.Lesson_7.OOP.Abstraction;
+package src_summary.Lesson_7.OOP.Abstraction.AbstractClasses;
 
 class TVController extends RemoteController {
 

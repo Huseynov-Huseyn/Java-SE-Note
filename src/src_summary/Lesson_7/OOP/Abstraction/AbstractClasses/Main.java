@@ -1,4 +1,4 @@
-package src_summary.Lesson_7.OOP.Abstraction;
+package src_summary.Lesson_7.OOP.Abstraction.AbstractClasses;
 
 public class Main {
     public static void main(String[] args) {
