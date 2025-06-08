@@ -11,5 +11,7 @@ public class Main {
 
         Rectangle r = new Rectangle(5, 10);
         r.printDetails();
+        System.out.println("=======================");
+        Shape.saySomething();
     }
 }
