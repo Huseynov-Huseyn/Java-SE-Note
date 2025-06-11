@@ -49,5 +49,7 @@ public class Deck {
         }
     }
 
-
+    public Card[] getCards() {
+        return cards;
+    }
 }
