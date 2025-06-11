@@ -8,11 +8,16 @@ public class Deck {
 
     public Deck() {
         String[] suits = {"♥️", "♦️", "♣️", "♠️"};
-        String[] ranks = {"7", "8", "9", "10", "J", "Q", "K"};
+        String[] numberCardRanks = {"7", "8", "9", "10"};
+        String[] faceCardRanks = {"J", "Q", "K"};
         int index = 0;
         for (String suit : suits) {
-            for (String rank : ranks) {
-                cards[index] = new Card(rank, suit);
+            for (String rank : numberCardRanks) {
+                cards[index] = new NumberCard(rank, suit);
+                index++;
+            }
+            for (String rank : faceCardRanks) {
+                cards[index] = new FaceCard(rank, suit);
                 index++;
             }
         }

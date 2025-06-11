@@ -15,14 +15,14 @@ public class Player {
 
     public void showPlayerDeck() {
         for (Card c : cards) {
-            System.out.println(c.suit() + " " + c.rank());
+            System.out.println(c);
         }
     }
 
     public int showPlayerScore() {
         int totalScore = 0;
         for (Card c : cards) {
-            totalScore += Card.valueOfCard(c.rank());
+            totalScore += c.getCardPoint();
         }
         return totalScore;
     }

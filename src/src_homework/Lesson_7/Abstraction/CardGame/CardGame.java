@@ -5,7 +5,7 @@ public class CardGame {
 
         Deck d = new Deck();
         d.shuffle();
-        int cardCount = 2;
+        int cardCount = 6;
 
         Player player1 = new Player("Huseyn", d.dealCards(cardCount));
         player1.showPlayerDeck();
