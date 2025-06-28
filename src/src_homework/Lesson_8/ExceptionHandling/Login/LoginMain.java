@@ -13,7 +13,7 @@ public class LoginMain {
         try{
             System.out.println(AuthenticateManagement.login(name, password));
         }catch (AuthenticationException e){
-            System.out.println(e.getMessage());
+            System.err.println(e.getMessage());
         }
     }
 }
